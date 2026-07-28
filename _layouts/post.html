@@ -1,26 +1,12 @@
 <head> <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/style-custom.css?v=' | append: site.github.build_revision | relative_url }}">
+   
    </head>
    <body>
     {%include sidebar.html%}
     <section>
         <h1>{{page.title}}</h1>
-        <section class="recipeFrontMatter">
-            <div class="cookTime"> 
-                <div>
-                    {% if page.prep_time %}
-                  <span>Prep time: {{page.prep_time}} minutes</span>
-                  {% endif %}
-                  {%if page.cook_time %}<span>Cook time: {{page.cook_time}} minutes</span>
-                  {% endif %}
-                  {% if page.total_time %}<span>Total time: {{page.total_time}} minutes</span>
-                  {% endif %}
-                </div>
-            </div>
-            <div class="source">Originally from: <a href="{{page.source_url}}">{{page.source_site}}</a></div>
-            <p>Submitted by: {{page.submitter}}</p></div>
-        </section>
-        {{page.description}}<p> Serves: {{page.servings}}</p>
+       
+        {{page.description}}
         {{page.content}}
 </section>
     </body>
