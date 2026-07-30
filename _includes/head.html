@@ -6,7 +6,7 @@
   {% capture rightnow %}
   {{"now" | date: "%Y-%m-%d %H:%M"}}
   {%endcapture%}
-  <link rel="stylesheet" href="{{ '/assets/main.css?v=' | append: rightnow " | relative_url }}">
+  <link rel="stylesheet" href="{{ 'assets/main.css?v=' | append: rightnow " | relative_url }}">
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
